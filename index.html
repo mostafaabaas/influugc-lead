@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>طلب خدمة — influUGC | احجز استشارة مجانية</title>
+<meta name="description" content="وكالة influUGC للتسويق وصناعة المحتوى — إنتاج محتوى وفيديو، تسويق بالمؤثرين، UGC، إدارة سوشيال ميديا وإعلانات ممولة للبراندات في مصر والسعودية والإمارات. الاستشارة الأولى مجانية.">
+<style>
+  :root{
+    --bg:#0b0b0b; --panel:#141414; --panel2:#1a1a1a; --line:#262626;
+    --lime:#c8ff00; --lime-dark:#a8d900; --text:#f5f5f5; --muted:#a7a7a7; --err:#ff6b6b;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .topbar{border-bottom:1px solid var(--line);background:rgba(11,11,11,.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(6px)}
+  .topbar-in{max-width:1120px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .topbar img{height:40px;width:auto;display:block}
+  .lang{font-size:14px;color:var(--muted);text-decoration:none;border:1px solid var(--line);padding:6px 14px;border-radius:999px;transition:.2s}
+  .lang:hover{color:var(--lime);border-color:var(--lime)}
+  .wrap{max-width:1120px;margin:0 auto;padding:48px 20px 64px;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
+  .kicker{display:inline-block;color:#0b0b0b;background:var(--lime);font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px;margin-bottom:18px}
+  h1{font-size:42px;line-height:1.25;font-weight:800;margin-bottom:16px}
+  h1 .hl{color:var(--lime)}
+  .sub{color:var(--muted);font-size:18px;margin-bottom:28px;max-width:52ch}
+  .points{display:grid;gap:12px;margin-bottom:32px}
+  .point{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+  .point b{color:var(--lime);font-weight:800}
+  .clients{border-top:1px solid var(--line);padding-top:20px}
+  .clients p{color:var(--muted);font-size:13px;margin-bottom:10px;letter-spacing:.02em}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:5px 14px;font-size:14px;color:#ddd}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:30px 28px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  .card h2{font-size:22px;font-weight:800;margin-bottom:6px}
+  .card .hint{color:var(--muted);font-size:14px;margin-bottom:22px}
+  .f{margin-bottom:18px}
+  label{display:block;font-size:14px;font-weight:700;margin-bottom:8px}
+  label .req{color:var(--lime)}
+  input[type=text],input[type=tel],textarea{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:10px;color:var(--text);font:inherit;font-size:16px;padding:12px 14px;outline:none;transition:border-color .15s}
+  input:focus,textarea:focus{border-color:var(--lime)}
+  textarea{min-height:96px;resize:vertical}
+  .opts{display:flex;flex-wrap:wrap;gap:8px}
+  .opt{position:relative}
+  .opt input{position:absolute;opacity:0;inset:0;cursor:pointer}
+  .opt span{display:inline-block;border:1px solid var(--line);background:var(--panel2);border-radius:999px;padding:8px 16px;font-size:14px;cursor:pointer;transition:.15s}
+  .opt input:checked+span{background:var(--lime);color:#0b0b0b;border-color:var(--lime);font-weight:700}
+  .opt input:focus-visible+span{outline:2px solid var(--lime);outline-offset:2px}
+  .submit{width:100%;background:var(--lime);color:#0b0b0b;border:0;border-radius:12px;font:inherit;font-size:18px;font-weight:800;padding:15px;cursor:pointer;transition:.15s;margin-top:6px}
+  .submit:hover{background:var(--lime-dark)}
+  .submit:disabled{opacity:.55;cursor:wait}
+  .privacy{color:var(--muted);font-size:12.5px;text-align:center;margin-top:14px}
+  .success{display:none;text-align:center;padding:28px 6px}
+  .success .ok{width:64px;height:64px;border-radius:50%;background:var(--lime);color:#0b0b0b;font-size:32px;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+  .success h3{font-size:22px;margin-bottom:8px}
+  .success p{color:var(--muted)}
+  footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;color:var(--muted);font-size:14px}
+  footer a{color:var(--lime);text-decoration:none}
+  footer .sep{margin:0 10px;color:var(--line)}
+  @media (max-width:860px){
+    .wrap{grid-template-columns:1fr;padding-top:32px;gap:32px}
+    h1{font-size:32px}
+    .card{padding:24px 20px}
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <img src="assets/logo.png" alt="influUGC">
+    <a class="lang" href="en/">English</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <span class="kicker">استشارة أولى مجانية</span>
+    <h1>خلّي براندك يتباع <span class="hl">بالمحتوى</span> مش بالإعلانات بس</h1>
+    <p class="sub">influUGC وكالة تسويق وصناعة محتوى (من 2020 — الجيزة، مصر) شغالة مع براندات في مصر والسعودية والإمارات: إنتاج محتوى وفيديو، تسويق بالمؤثرين، محتوى UGC، إدارة سوشيال ميديا، وإعلانات ممولة.</p>
+    <div class="points">
+      <div class="point"><b>✓</b><span>فريق إنتاج كامل: تصوير، مونتاج، وكتابة محتوى تحت سقف واحد.</span></div>
+      <div class="point"><b>✓</b><span>قاعدة كريتورز ومؤثرين موثّقة في مصر والخليج لكل الفئات.</span></div>
+      <div class="point"><b>✓</b><span>رد على واتساب في أقرب وقت بعد ما تبعت الطلب.</span></div>
+    </div>
+    <div class="clients">
+      <p>من أعمالنا مع براندات معروفة</p>
+      <div class="chips">
+        <span class="chip">موسم الرياض</span>
+        <span class="chip">طيران ناس</span>
+        <span class="chip">realme</span>
+        <span class="chip">Domino's</span>
+        <span class="chip">Zanussi</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <form id="leadForm" novalidate>
+      <h2>اطلب خدمتك</h2>
+      <p class="hint">املأ البيانات وهنرجعلك على واتساب — الاستشارة الأولى مجانية.</p>
+
+      <div class="f">
+        <label for="name">الاسم بالكامل <span class="req">*</span></label>
+        <input type="text" id="name" autocomplete="name" required>
+      </div>
+      <div class="f">
+        <label for="company">اسم الشركة أو البراند <span class="req">*</span></label>
+        <input type="text" id="company" autocomplete="organization" required>
+      </div>
+      <div class="f">
+        <label for="whatsapp">رقم الواتساب <span class="req">*</span></label>
+        <input type="tel" id="whatsapp" autocomplete="tel" inputmode="tel" placeholder="01xxxxxxxxx" required>
+      </div>
+      <div class="f">
+        <label>الخدمة المطلوبة <span class="req">*</span></label>
+        <div class="opts" id="serviceOpts">
+          <label class="opt"><input type="radio" name="service" value="إنتاج محتوى وفيديو" required><span>إنتاج محتوى وفيديو</span></label>
+          <label class="opt"><input type="radio" name="service" value="تسويق بالمؤثرين"><span>تسويق بالمؤثرين</span></label>
+          <label class="opt"><input type="radio" name="service" value="محتوى UGC"><span>محتوى UGC</span></label>
+          <label class="opt"><input type="radio" name="service" value="إدارة سوشيال ميديا"><span>إدارة سوشيال ميديا</span></label>
+          <label class="opt"><input type="radio" name="service" value="إعلانات ممولة"><span>إعلانات ممولة</span></label>
+          <label class="opt"><input type="radio" name="service" value="باقة متكاملة"><span>باقة متكاملة</span></label>
+        </div>
+      </div>
+      <div class="f">
+        <label>الميزانية التقديرية</label>
+        <div class="opts" id="budgetOpts">
+          <label class="opt"><input type="radio" name="budget" value="أقل من 10,000 جنيه"><span>أقل من 10,000 جنيه</span></label>
+          <label class="opt"><input type="radio" name="budget" value="10,000–30,000 جنيه"><span>10,000–30,000 جنيه</span></label>
+          <label class="opt"><input type="radio" name="budget" value="30,000–75,000 جنيه"><span>30,000–75,000 جنيه</span></label>
+          <label class="opt"><input type="radio" name="budget" value="أكثر من 75,000 جنيه"><span>أكثر من 75,000 جنيه</span></label>
+        </div>
+      </div>
+      <div class="f">
+        <label for="details">تفاصيل المشروع</label>
+        <textarea id="details" placeholder="احكيلنا باختصار عن مشروعك وهدفك…"></textarea>
+      </div>
+
+      <button class="submit" id="submitBtn" type="submit">احجز استشارة مجانية</button>
+      <p class="privacy">بياناتك بتتستخدم للتواصل بخصوص طلبك فقط.</p>
+    </form>
+
+    <div class="success" id="successBox">
+      <div class="ok">✓</div>
+      <h3>شكرًا — استلمنا طلبك</h3>
+      <p>هنرجعلك قريبًا على واتساب. لو محتاجنا أسرع، كلمنا مباشرة على <a href="https://wa.me/201029979797" style="color:var(--lime)">واتساب</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 influUGC — وكالة تسويق وصناعة محتوى
+  <span class="sep">|</span><a href="https://www.influugc.com">www.influugc.com</a>
+  <span class="sep">|</span><a href="https://wa.me/201029979797">واتساب</a>
+</footer>
+
+<script>
+  // Google Form backend (entry IDs filled from the form's pre-filled link)
+  var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScdtQkx6GPR13kyREYLNSNx9ua1YkvKNNpF4I4C0Ua_3Jns-Q/formResponse";
+  var ENTRY = {
+    name: "ENTRY_NAME",
+    company: "ENTRY_COMPANY",
+    whatsapp: "ENTRY_WHATSAPP",
+    service: "ENTRY_SERVICE",
+    budget: "ENTRY_BUDGET",
+    details: "ENTRY_DETAILS"
+  };
+  var form = document.getElementById("leadForm");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    var svc = form.querySelector('input[name="service"]:checked');
+    var bud = form.querySelector('input[name="budget"]:checked');
+    var data = new URLSearchParams();
+    data.append(ENTRY.name, document.getElementById("name").value.trim());
+    data.append(ENTRY.company, document.getElementById("company").value.trim());
+    data.append(ENTRY.whatsapp, document.getElementById("whatsapp").value.trim());
+    if (svc) data.append(ENTRY.service, svc.value);
+    if (bud) data.append(ENTRY.budget, bud.value);
+    data.append(ENTRY.details, document.getElementById("details").value.trim());
+    var btn = document.getElementById("submitBtn");
+    btn.disabled = true; btn.textContent = "جارٍ الإرسال…";
+    fetch(FORM_URL, { method: "POST", mode: "no-cors", body: data })
+      .then(showDone).catch(showDone);
+    function showDone() {
+      form.style.display = "none";
+      document.getElementById("successBox").style.display = "block";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  });
+</script>
+</body>
+</html>
